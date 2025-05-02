@@ -1,4 +1,5 @@
-export const BASEURL = "http://localhost:8000";
+export const BASEURL = "https://blogs-azkq.onrender.com";
+
 
 export const reactQuillModules = {
   toolbar: [
