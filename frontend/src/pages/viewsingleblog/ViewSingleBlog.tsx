@@ -85,7 +85,7 @@ export const ViewSingleBlog = (): JSX.Element => {
             <img
               src={
                 blogData?.cover_image
-                  ? `https://blogs-azkq.onrender.com{blogData.cover_image}`
+                  ? `https://blogs-azkq.onrender.com${blogData.cover_image}`
                   : "/default-cover.jpg"
               }
               alt="coverimage"
@@ -99,7 +99,7 @@ export const ViewSingleBlog = (): JSX.Element => {
               <img
                 src={
                   blogData?.["author_profile_image"]
-                    ? `https://blogs-azkq.onrender.com{blogData["author_profile_image"]}`
+                    ? `https://blogs-azkq.onrender.com${blogData["author_profile_image"]}`
                     : "/default-profile.jpg"
                 }
                 alt="author-profileimage"

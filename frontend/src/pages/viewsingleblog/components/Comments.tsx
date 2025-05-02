@@ -89,7 +89,7 @@ export const Comments = ({ blogId, authToken, setOpenComments }: CommentsProps):
               <img
                 src={
                   comment?.["user_profile_image"]
-                    ? `https://blogs-azkq.onrender.com{comment["user_profile_image"]}`
+                    ? `https://blogs-azkq.onrender.com${comment["user_profile_image"]}`
                     : "/default-profile.jpg"
                 }
                 alt="author-profileimage"

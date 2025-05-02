@@ -1,4 +1,4 @@
-export const BASEURL = "https://blogs-azkq.onrender.com";
+export const BASEURL = "https://blogs-azkq.onrender.com$";
 
 
 export const reactQuillModules = {

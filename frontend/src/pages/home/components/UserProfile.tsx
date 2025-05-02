@@ -115,7 +115,7 @@ export const UserProfile = (): JSX.Element => {
 
       {/* Profile image & username & dropdown options */}
       <div ref={dropdownRef} onClick={handleOptionsOnClick} className="flex justify-between gap-x-2 items-center p-2 cursor-pointer relative">
-        <img src={`https://blogs-azkq.onrender.com{userData?.profile_image}`} alt="profileimage" className="w-10 h-10 rounded-full" />
+        <img src={`https://blogs-azkq.onrender.com${userData?.profile_image}`} alt="profileimage" className="w-10 h-10 rounded-full" />
         <p className="font-secondary text-sm over overflow-hidden">@ {userData?.username}</p>
         {isOpen ? <RiArrowDropUpFill size={30} /> : <RiArrowDropDownFill size={30} />}
         {isOpen && (
