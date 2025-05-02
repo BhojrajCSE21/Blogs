@@ -69,6 +69,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
+CORS_ALLOWED_ORIGINS = [
+    "https://blogs-mu-rosy.vercel.app/",  # Replace with your actual Vercel URL
+]
 
 # Database
 DATABASES = {
