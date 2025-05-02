@@ -41,7 +41,6 @@ It is a full-stack blog web application built with React on the frontend and Dja
   - `npm >= 8.3.1`
   - `python >= 3.8`
   - `pip >= 21.3.1`
-  - `AWS account` - if you want to use AWS
   - Setup variables in the `backend\config.py` file to encapsulate all your secret-keys related to AWS. 
 - `git clone https://github.com/AI-14/chronicles.git` - clones the repository
 - `cd chronicles`
