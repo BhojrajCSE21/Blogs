@@ -33,7 +33,7 @@ export const BlogCard = ({ blogData, status, authToken }: BlogCardProps): JSX.El
     <div className="rounded-2xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition duration-300 cursor-pointer group relative w-full">
       <div className="relative w-full h-48">
         <img
-          src={blogData.cover_image ? `https://blogs-azkq.onrender.com${blogData.cover_image}` : "/default-cover.jpg"}
+          src={blogData.cover_image ? `{blogData.cover_image}` : "/default-cover.jpg"}
           alt="cover"
           className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
         />

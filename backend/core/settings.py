@@ -36,6 +36,9 @@ INSTALLED_APPS = [
     'accounts',
     'blogs',
     'storages',
+    'cloudinary',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
@@ -120,11 +123,19 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 
-# Media files (images)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-PROFILE_IMAGE_DIR_NAME = 'profileimages'
-BLOG_IMAGE_DIR_NAME = 'blogcoverimages'
+# # Media files (images)
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# PROFILE_IMAGE_DIR_NAME = 'profileimages'
+# BLOG_IMAGE_DIR_NAME = 'blogcoverimages'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': config.CLOUDINARY_CLOUD_NAME,
+    'API_KEY': config.CLOUDINARY_API_KEY,
+    'API_SECRET': config.CLOUDINARY_API_SECRET,
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Default primary key field type
