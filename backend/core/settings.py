@@ -122,7 +122,7 @@ STATIC_URL = 'static/'
 
 # Media files (images)
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 PROFILE_IMAGE_DIR_NAME = 'profileimages'
 BLOG_IMAGE_DIR_NAME = 'blogcoverimages'
 
