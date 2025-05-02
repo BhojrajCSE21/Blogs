@@ -65,7 +65,7 @@ export const UserProfileMobile = ({ setIsOpen }: UserProfileMobileProps): JSX.El
     <>
       {/** Profile image & username */}
       <div className="flex flex-col justify-between items-center p-2 cursor-pointer hover:scale-110 transition-none">
-        <img src={`http://localhost:8000${userData?.profile_image}`} alt="profileimage" className="w-16 h-16 rounded-full" />
+        <img src={`https://blogs-azkq.onrender.com{userData?.profile_image}`} alt="profileimage" className="w-16 h-16 rounded-full" />
         <p className="font-secondary text-sm over overflow-hidden">@ {userData?.username}</p>
       </div>
 

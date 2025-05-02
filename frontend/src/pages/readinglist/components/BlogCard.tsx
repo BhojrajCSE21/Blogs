@@ -14,7 +14,7 @@ export const BlogCard = ({ blogData }: any): JSX.Element => {
         <img
           src={
             blogData.blog_details.cover_image
-              ? `http://localhost:8000${blogData.blog_details.cover_image}`
+              ? `https://blogs-azkq.onrender.com{blogData.blog_details.cover_image}`
               : "/default-cover.jpg"
           }
           alt="cover"
@@ -39,7 +39,7 @@ export const BlogCard = ({ blogData }: any): JSX.Element => {
           <img
             src={
               blogData.blog_details.author_profile_image
-                ? `http://localhost:8000${blogData.blog_details.author_profile_image}`
+                ? `https://blogs-azkq.onrender.com{blogData.blog_details.author_profile_image}`
                 : "/default-profile.jpg"
             }
             alt="author-profileimage"
